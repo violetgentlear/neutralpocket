@@ -1,0 +1,12 @@
+{
+  "name": "state-sync-9d1b95",
+  "version": "1.0.0",
+  "description": "A state sync utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["state-sync", "utility"],
+  "license": "MIT"
+}

